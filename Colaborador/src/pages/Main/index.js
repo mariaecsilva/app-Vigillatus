@@ -5,6 +5,7 @@ import globalStyles from "../../Styles/globalStyles";
 import Profile from "../../componentes/Profile/index";
 import Card from "../../componentes/Card/index";
 import Ionicons from "react-native-vector-icons/Ionicons";
+import InfoRow from "../../componentes/InfoRow/index"
 import { fetchCollaboratorData } from "../../API/api";
 import { fetchOccurrencesData } from "../../API/api";
 
@@ -44,23 +45,13 @@ export default function Main({ navigation }) {
       <View style={Styles.horizontalLine} />
       <View style={Styles.containerInfo}>
         {collaborator && (
+          <View style={Styles.containerCollborator}>
           <View style={Styles.bodyCollborator}>
-            <View style={Styles.collaboratorData}>
-              <Text style={Styles.grayText}>Nome: </Text>
-              <Text style={Styles.blackText}>{collaborator.nome}</Text>
-            </View>
-            <View style={Styles.collaboratorData}>
-              <Text style={Styles.grayText}>Email: </Text>
-              <Text style={Styles.blackText}>{collaborator.email}</Text>
-            </View>
-            <View style={Styles.collaboratorData}>
-              <Text style={Styles.grayText}>Telefone: </Text>
-              <Text style={Styles.blackText}>{collaborator.telefone}</Text>
-            </View>
-            <View style={Styles.collaboratorData}>
-              <Text style={Styles.grayText}>Registro: </Text>
-              <Text style={Styles.blackText}>{collaborator.registro}</Text>
-            </View>
+            <InfoRow label="Nome" value={collaborator.nome} blackStyle={{ marginLeft: "3%" }} spaceStyle={{marginBottom:"3%"}} />
+            <InfoRow label="Email" value={collaborator.email} blackStyle={{ marginLeft: "3%" }} spaceStyle={{marginBottom:"3%"}} />
+            <InfoRow label="Telefone" value={collaborator.telefone} blackStyle={{ marginLeft: "3%" }} spaceStyle={{marginBottom:"3%"}}  />
+            <InfoRow label="Registro" value={collaborator.registro} blackStyle={{ marginLeft: "3%" }} />
+          </View>
           </View>
         )}
         <View style={{ alignItems: "start", width: "90%", margin: "2%" }}>

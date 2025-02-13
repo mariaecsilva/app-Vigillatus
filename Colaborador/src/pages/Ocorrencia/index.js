@@ -19,19 +19,19 @@ export default function Ocorrencia({ navigation }) {
           />
         </View>
         <View style={Styles.bodyText}>
-          <InfoRow label="Setor" value={item.setor} />
+          <InfoRow label="Setor" value={item.setor} spaceStyle={{ justifyContent:"space-between"}} />
           <View style={Styles.horizontalLine} />
-          <InfoRow label="Camêra" value={item.camera} />
+          <InfoRow label="Camêra" value={item.camera} spaceStyle={{ justifyContent:"space-between"}} />
           <View style={Styles.horizontalLine} />
-          <InfoRow label="Data" value={item.data} />
+          <InfoRow label="Data" value={item.data} spaceStyle={{ justifyContent:"space-between"}} />
           <View style={Styles.horizontalLine} />
-          <InfoRow label="Hora" value={item.hora} />
+          <InfoRow label="Hora" value={item.hora} spaceStyle={{ justifyContent:"space-between"}} />
           <View style={Styles.horizontalLine} />
-          <InfoRow label="Colaborador" value={item.colaborador} />
+          <InfoRow label="Colaborador" value={item.colaborador} spaceStyle={{ justifyContent:"space-between"}} />
           <View style={Styles.horizontalLine} />
-          <InfoRow label="Responsável" value={item.responsavel} />
+          <InfoRow label="Responsável" value={item.responsavel} spaceStyle={{ justifyContent:"space-between"}} />
           <View style={Styles.horizontalLine} />
-          <InfoRow label="Status" value={item.status} />
+          <InfoRow label="Status" value={item.status} spaceStyle={{ justifyContent:"space-between"}} />
         </View>
       </View>
       <TouchableOpacity

@@ -15,14 +15,17 @@ const styles = StyleSheet.create({
     },
     imageBox:{
         flexDirection:"row", 
-        width:"40%"
+        width:"40%",
+        height:"100%",
     },
     image:{
         resizeMode:"contain",
-        width:100,
+        width:150,
+        height:150
     },
     textBox:{
-        width:"70%"
+        width:"60%",
+        alignItems:"center",
     }, 
       horizontalLine: {
         borderBottomColor: '#B5B5B5',

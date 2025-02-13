@@ -1,8 +1,11 @@
-import { View, Text,TouchableOpacity, Platform } from "react-native";
+import { View, Text,TouchableOpacity, Platform , Dimensions } from "react-native";
 import Styles from "./styles.js";
 import FontAwesome6 from "react-native-vector-icons/FontAwesome6";
 
 export default function CustomTabBar({state, descriptors, navigation}) {
+
+  const { width } = Dimensions.get("window"); 
+  const iconSize = width * 0.075;
 
   return (
     <View style={Styles.container}>
@@ -33,14 +36,13 @@ export default function CustomTabBar({state, descriptors, navigation}) {
                     <View style={[Styles.innerButtom, {backgroundColor: isFocused ? "#333333" : "transparent"}]}>
                         <FontAwesome6
                             name={options.tabBarIcon}
-                            size={32}
+                            size={iconSize}
                             color="#A29F9F"
                         />
                     </View>
                 </View>
             </TouchableOpacity>
            ) 
-        
         })};
       </View>
     </View>

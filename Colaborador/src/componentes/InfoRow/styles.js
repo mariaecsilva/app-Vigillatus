@@ -1,20 +1,22 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet,Dimensions } from "react-native";
+
+const { width } = Dimensions.get("window"); 
+const fontSize = width * 0.038;
 
 const styles = StyleSheet.create({
   textBox: {
     flexDirection: "row",
-    justifyContent: "space-between",
-    width: "85%",
+    width:"100%",
   },
   grayText: {
     color: "#B5B5B5",
-    fontSize: 18,
+    fontSize: fontSize,
     fontFamily: "Roboto",
     fontWeight: "bold",
   },
   blackText: {
     color: "#000000",
-    fontSize: 18,
+    fontSize: fontSize,
     fontFamily: "Roboto",
     fontWeight: "bold",
   },

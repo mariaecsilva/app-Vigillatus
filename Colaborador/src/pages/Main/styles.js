@@ -8,21 +8,25 @@ const styles = StyleSheet.create({
     height: 2,
   },
   bodyCollborator: {
+    width: "90%",
+    height:"auto",
+    margin:"5%",
+  },
+  containerCollborator: {
     backgroundColor: "#FFFFFF",
     width: "90%",
-    height: "30%",
     borderRadius: 20,
+    marginBottom:'10%',
   },
   containerInfo: {
     width: "100%",
-    height: "100%",
+    height: "75%",
     alignItems: "center",
     marginVertical: "5%",
-    justifyContent: "center",
   },
   bodyCard: {
     width: "100%",
-    height: "90%",
+    height: "32%",
   },
   touchable: {
     width: "100%",
@@ -31,25 +35,16 @@ const styles = StyleSheet.create({
   },
   title: {
     color: "#333333",
-    fontSize: 18,
+    fontSize: 25,
     fontFamily: "Roboto",
     fontWeight: "bold",
+    marginVertical:10,
   },
   collaboratorData: {
     flexDirection: "row",
     margin: "5%",
-  },
-  grayText: {
-    color: "#B5B5B5",
-    fontSize: 18,
-    fontFamily: "Roboto",
-    fontWeight: "bold",
-  },
-  blackText: {
-    color: "#000000",
-    fontSize: 18,
-    fontFamily: "Roboto",
-    fontWeight: "bold",
+    width:"90%",
+    backgroundColor:"red"
   },
 });
 

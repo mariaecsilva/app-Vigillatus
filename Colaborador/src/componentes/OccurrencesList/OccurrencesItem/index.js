@@ -15,9 +15,9 @@ export default function OcorrencesItem({ setor, data, status }) {
                 />
               </View>
               <View style={Styles.textBox}>
-                <InfoRow label="Setor" value={setor} />
-                <InfoRow label="Data" value={data} />
-                <InfoRow label="Status" value={status} />
+                <InfoRow label="Setor" value={setor} blackStyle={{ marginLeft: "5%" }} />
+                <InfoRow label="Data" value={data} blackStyle={{ marginLeft: "5%" }} />
+                <InfoRow label="Status" value={status} blackStyle={{ marginLeft: "5%" }} />
               </View>
             </View>
             <View style={Styles.horizontalLine} />

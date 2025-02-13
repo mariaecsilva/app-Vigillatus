@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
         alignItems:"center",
         justifyContent:"center",
         height:"40%",
-        width:"100%"
+        width:"100%",
     },
     body:{
         marginTop:"7%",
@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
         height:"80%",
         borderRadius:20,
         marginVertical: "5%",
+        alignItems:"center",
     },
     image:{
         width: "80%",
@@ -21,13 +22,14 @@ const styles = StyleSheet.create({
         resizeMode: "contain",
     },
       bodyText:{
-        alignItems:"center",
-        gap:"3%"
+        gap:"4%",
+        width:"90%",
+        height:"60%",
       },
       horizontalLine: {
         borderBottomColor: '#E5E5E5',
         borderBottomWidth: 1,
-        width: "83%",
+        width: "100%",
         height: 1,
       },
       buttonError:{

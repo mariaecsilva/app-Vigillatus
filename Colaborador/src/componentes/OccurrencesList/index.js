@@ -18,7 +18,7 @@ const navigation = useNavigation();
           keyExtractor={(item) => item.id.toString()}
           renderItem={({ item }) => (
             <TouchableOpacity onPress={() => navigation.navigate("Ocorrencia", {item})}>
-              <OcorrencesItem {...item}/>
+              <OcorrencesItem {...item} />
             </TouchableOpacity>
           )}
         />
