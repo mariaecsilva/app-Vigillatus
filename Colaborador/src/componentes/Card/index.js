@@ -2,10 +2,10 @@ import React from "react";
 import { View, Text, Image } from "react-native";
 import Styles from "./styles";
 
-export default function Card({ setor, data, colaborador, hora }) {
+export default function Card({ setor, data, firstName, hora }) {
   return (
     <View style={Styles.container}>
-      <Text style={Styles.title}>{colaborador}</Text>
+      <Text style={Styles.title}>{firstName}</Text>
       <View style={Styles.horizontalLine} />
       <View style={Styles.bodyOccurrence}>
         <Image

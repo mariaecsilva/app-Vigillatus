@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
+import { View, Text} from "react-native";
 import Styles from "./styles.js";
 
 export default function InfoRow({ label, value, blackStyle, spaceStyle}) {

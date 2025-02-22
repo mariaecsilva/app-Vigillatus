@@ -1,4 +1,9 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet,Dimensions } from "react-native";
+
+const { width } = Dimensions.get("window"); 
+const titleSize = width * 0.06;
+const fontSize = width * 0.04;
+const imageSize = width*0.5;
 
 const styles = StyleSheet.create({
   body: {
@@ -12,21 +17,22 @@ const styles = StyleSheet.create({
     paddingVertical: "10%",
   },
   title: {
-    fontSize: 24,
+    fontSize: titleSize,
     fontFamily: "Roboto",
     fontWeight: "bold",
   },
   text: {
-    fontSize: 18,
+    fontSize: fontSize,
     fontFamily: "Roboto",
     fontWeight: "bold",
     textAlign: "center",
     marginVertical: "3%",
     marginLeft: "2%",
+    width:"95%"
   },
   image: {
-    width: "50%",
-    height: "40%",
+    width: imageSize,
+    height: imageSize,
     resizeMode: "contain",
     marginVertical: "3%",
   },

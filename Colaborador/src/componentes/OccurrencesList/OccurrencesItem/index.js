@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, Image } from "react-native";
 import Styles from "./styles.js";
 import InfoRow from "../../InfoRow/index.js"
-export default function OcorrencesItem({ setor, data, status }) {
+export default function OcorrencesItem({ setor, data, status, imageOccurence }) {
 
   return (
     <View>
@@ -20,7 +20,6 @@ export default function OcorrencesItem({ setor, data, status }) {
                 <InfoRow label="Status" value={status} blackStyle={{ marginLeft: "5%" }} />
               </View>
             </View>
-            <View style={Styles.horizontalLine} />
           </View>
     </View>
   );

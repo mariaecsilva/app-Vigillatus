@@ -1,6 +1,6 @@
 export const fetchOccurrencesData = async () => {
   try {
-    const response = await fetch("https://run.mocky.io/v3/4b43cb2f-df01-41fe-a093-f816533693eb");
+    const response = await fetch("https://run.mocky.io/v3/310d1dac-5f3e-40ed-b213-d1148b784030");
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
@@ -13,7 +13,7 @@ export const fetchOccurrencesData = async () => {
 
 export const fetchCollaboratorData = async () => {
   try {
-    const response = await fetch("https://run.mocky.io/v3/1584684c-5027-4f35-b7e1-fb97c6c0f820");
+    const response = await fetch("https://run.mocky.io/v3/3868ae99-b63f-4bb2-aa32-1ecf79dea418");
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }

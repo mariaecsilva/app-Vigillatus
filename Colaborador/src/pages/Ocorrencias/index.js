@@ -13,6 +13,7 @@ export default function Ocorrencias() {
       try {
         const data = await fetchOccurrencesData();
         setOccurrences(data);
+        
       } catch (error) {
         console.error("Error fetching occurrences data:", error);
       }
